@@ -1,4 +1,4 @@
-# 🥏frizTracker
+# 🥏 frizTracker
 I love ultimate. I love computer vision. There is nothing else that can intersect these two the best. Tune in to find out.
 
 #### Getting started
@@ -11,5 +11,6 @@ I love ultimate. I love computer vision. There is nothing else that can intersec
 
 #### Thoughts for us devs
 * Do we want to dockerize this? If so, how do we dockerize this? Maybe a redis queue? ML image, backend image, postgres image, redis image??
+* Should I follow every fiber in my being that is telling me to screw React and go back to Vue to and get all cozy with my cushy chushy comfortabilities or shoud I ball out and just die learning React
 * Will we need workers?
 * CI/CD for something like this is overkill
