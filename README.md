@@ -8,6 +8,9 @@ I love ultimate. I love computer vision. There is nothing else that can intersec
 
 #### Structure
 ![The best I can come up with](assets/images/structure.png)
+* All API calls will be made through Axios, and I have already made the route changes from the backend to proxy to the frontend
+* the structure will be this.getAPI{function responsibility}.
+
 
 #### Thoughts for us devs
 * Do we want to dockerize this? If so, how do we dockerize this? Maybe a redis queue? ML image, backend image, postgres image, redis image??

@@ -12,7 +12,11 @@ const routerOptions = [
   },
   {
     path: '/about',
-    name: 'About',
+    name: 'About'
+  },
+  {
+    path: '*',
+    name: 'notFound'
   }
 ]
 
