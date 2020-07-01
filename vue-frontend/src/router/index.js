@@ -4,10 +4,6 @@ import Router from 'vue-router'
 const routerOptions = [
   {
     path: '/',
-    name: 'HelloWorld'
-  },
-  {
-    path: '/home',
     name: 'Home'
   },
   {

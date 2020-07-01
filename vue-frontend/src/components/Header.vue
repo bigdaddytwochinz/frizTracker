@@ -1,14 +1,13 @@
 <template>
-
-    <div>
-      <p>Well, well, well. This is who we are.</p>
-    </div>
+  <div>
+    <a :href="'https://google.com'"> shoot me </a>
+  </div>
 
 </template>
 
 <script>
 export default {
-  name: 'About'
+  name: 'Header'
 }
 </script>
 

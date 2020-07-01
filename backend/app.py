@@ -1,5 +1,6 @@
 import time
 from flask import Flask, render_template, jsonify
+from flask_cors import CORS
 from random import *
 
 def create_app():
@@ -7,9 +8,12 @@ def create_app():
                 static_folder= "../dist/static",
                 # this is in sort, adding it to the path except facilitating to the backend only yay
                 template_folder="../dist")
-    return app
 
-app = create_app()
+    cors = CORS(app, resources = {r"/api/*": {"origins": "*"}})
+
+    return app, cors
+
+app, cors = create_app()
 
 @app.route('/')
 def index():
@@ -29,6 +33,8 @@ def random_num():
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def catch_all(path):
+    if app.debug:
+        return requests.get('http://localhost:8080/{}'.format(path)).text
     return render_template("index.html")
 
 
