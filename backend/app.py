@@ -6,7 +6,8 @@ from random import *
 def create_app():
     app = Flask(__name__,
                 static_folder= "../dist/static",
-                # this is in sort, adding it to the path except facilitating to the backend only yay
+                # this is in sort, adding it to the path except facilitating to
+                # the backend only yay
                 template_folder="../dist")
 
     cors = CORS(app, resources = {r"/api/*": {"origins": "*"}})
@@ -36,7 +37,3 @@ def catch_all(path):
     if app.debug:
         return requests.get('http://localhost:8080/{}'.format(path)).text
     return render_template("index.html")
-
-
-
-
